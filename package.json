@@ -1,0 +1,24 @@
+{
+  "name": "cloudproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/302Blue/CloudProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/302Blue/CloudProject/issues"
+  },
+  "homepage": "https://github.com/302Blue/CloudProject#readme",
+  "dependencies": {
+    "@google-cloud/compute": "^1.1.5",
+    "express": "^4.17.1"
+  }
+}
