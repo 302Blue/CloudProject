@@ -1,5 +1,5 @@
 {
-  "name": "cloudproject",
+  "name": "cloudprojectgcp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/302Blue/CloudProject.git"
+    "url": "git+https://github.com/302Blue/CloudProjectGCP.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/302Blue/CloudProject/issues"
+    "url": "https://github.com/302Blue/CloudProjectGCP/issues"
   },
-  "homepage": "https://github.com/302Blue/CloudProject#readme",
+  "homepage": "https://github.com/302Blue/CloudProjectGCP#readme",
   "dependencies": {
     "@google-cloud/compute": "^1.1.5",
     "body-parser": "^1.19.0",
