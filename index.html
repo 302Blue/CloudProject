@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>VM World</title>
-    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="api.js"></script>
-    <style href=style.css rel="stylesheet"></style>
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href=style.css ></link>
 </head>
 
 <body>
 
     <h1 class="headers"> VM World </h1>
     <div class="buttons">
-        <br>
-        <input type="button" id="create" value="Create VM"></input>
-        <input type="button" id="read" value="Read VM"></input>
-        <input type="button" id="update" value="Update VM"></input>
-        <input type="button" id="destroy" value="Delete VM"></input>
-        </br>
-    </div>
+        <input type="button" value="Test Express" id="test" onclick="sendTest()"></input>
+        <input type="button" value="Create VM" id="create" onclick="sendCreate()"></input>
+        <input type="button" value="Read VM" id="read" onclick="sendRead()"></input>
+        <input type="button" value="Update VM" id="update" onclick="sendUpdate()"></input>
+        <input type="button" value="Destroy VM" id="destroy" onclick="showDeletes()"></input>    
+        <div class="deletebtns" style="display: none">
+                <div>
+                    <input type="text" id="idNum" placeholder="Type VM ID Number"></input>
+                </div>
+                <div>
+                <input type="submit" value="Destroy by ID" id="destroyID" onclick="sendDeleteID()"></input>    
+                <input type="submit" value="Destroy All" id="destroyAll" onclick="sendDeleteAll()"></input>
+                </div>
+        </div>
+    </div>    
 
-    <div class="tables">
-        <br></br>
+    <div class="tables" style="display: none">
         <table id="infoTable">
             <th><h3>Current VMs</h3></th>
         </table>

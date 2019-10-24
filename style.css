@@ -1,66 +1,46 @@
 body {
-    text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-    .card {
-      flex: 1 1 calc(50% - 2rem);
-    }
-  }
-  
-@media screen and (min-width: 900px) {
-    .card {
-        flex: 1 1 calc(33% - 2rem);
-    }
-}
-
-.headers {
-    max-width: 1200px;
-    margin-left:auto; 
-    margin-right:auto;
-}
-
-.buttons {
-    max-width: 1200px;
-    margin-left:auto; 
-    margin-right:auto;
-}
-
-.tables {
-    width: 70%;
-    padding: 2px 3px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    border-collapse: collapse;
-    border-spacing: 0;
+    text-align: left;
     font: 17px Calibri;
 }
 
-
-#infoTable th, #infoTable td {    
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    padding: 5px;  
+.headers {
+    margin-left: auto; 
+    margin-right: auto;
 }
 
-#create {
-    margin-left:auto; 
-    margin-right:auto;
+.buttons {
+    text-align: left;
+    display: inline;
 }
 
-#read {
-    margin-left:auto; 
-    margin-right:auto;
+.deletebtns {
+    text-align: left;
 }
 
-#update {
-    margin-left:auto; 
-    margin-right:auto;
+.tables {   
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-#destroy {
-    margin-left:auto; 
-    margin-right:auto;
+
+#infoTable th, #infoTable td {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#test, #create, #read, #update, #destroy{
+    width: 200px;
+    height: 50px;
+}
+
+#idNum {
+    margin-top: 10px;
+    width: 400px;
+}
+
+#destroyAll, #destroyID {
+    margin-top: 10px;
+    width: 200px;
 }
