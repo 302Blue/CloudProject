@@ -3,16 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/vm.ico">
 
-    <title>VM World</title>
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <title> VM World </title>
+    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
     <link rel="stylesheet" href=style.css ></link>
 </head>
 
 <body>
-
     <h1 class="headers"> VM World </h1>
+    <div class="textboxes">
+        <textarea id="chatbox" readonly=true>
+        </textarea>
+        <form action="">
+            <input type="text" id="inputfld" autocomplete="off"/><input type="button" id="sendbtn" value="Send"></input>
+        </form>
+    </div>
+
+
     <div class="buttons">
         <input type="button" value="Test Express" id="test" onclick="sendTest()"></input>
         <input type="button" value="Create VM" id="create" onclick="sendCreate()"></input>
@@ -32,7 +41,12 @@
 
     <div class="tables" style="display: none">
         <table id="infoTable">
-            <th><h3>Current VMs</h3></th>
+            <thead>
+                <th><h3>Current VMs</h3></th>
+            </thead>
+            <tbody>
+                <tr><td>Loading...</td></tr>
+            </tbody>
         </table>
     </div>
 

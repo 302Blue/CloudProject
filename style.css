@@ -4,8 +4,11 @@ body {
 }
 
 .headers {
+    margin-top: 0px;
     margin-left: auto; 
     margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 75px;
 }
 
 .buttons {
@@ -18,14 +21,14 @@ body {
 }
 
 .tables {   
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-
-#infoTable th, #infoTable td {
+#infoTable thead, #infoTable th, #infoTable tbody, #infoTable tr, #infoTable td {
     margin-left: auto;
     margin-right: auto;
 }
