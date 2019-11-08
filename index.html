@@ -8,7 +8,14 @@
     <title> VM World </title>
     <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
-    <link rel="stylesheet" href=style.css ></link>
+    <link rel="stylesheet" href="./style.css">
+    </link>
+    <!-- Bootstrap & jQuery-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </link>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,7 +24,8 @@
         <textarea id="chatbox" readonly=true>
         </textarea>
         <form action="">
-            <input type="text" id="inputfld" autocomplete="off"/><input type="button" id="sendbtn" value="Send"></input>
+            <input type="text" id="inputfld" autocomplete="off" /><input type="button" id="sendbtn"
+                value="Send"></input>
         </form>
     </div>
 
@@ -27,25 +35,29 @@
         <input type="button" value="Create VM" id="create" onclick="sendCreate()"></input>
         <input type="button" value="Read VM" id="read" onclick="sendRead()"></input>
         <input type="button" value="Update VM" id="update" onclick="sendUpdate()"></input>
-        <input type="button" value="Destroy VM" id="destroy" onclick="showDeletes()"></input>    
+        <input type="button" value="Destroy VM" id="destroy" onclick="showDeletes()"></input>
         <div class="deletebtns" style="display: none">
-                <div>
-                    <input type="text" id="idNum" placeholder="Type VM ID Number"></input>
-                </div>
-                <div>
-                <input type="submit" value="Destroy by ID" id="destroyID" onclick="sendDeleteID()"></input>    
+            <div>
+                <input type="text" id="idNum" placeholder="Type VM ID Number"></input>
+            </div>
+            <div>
+                <input type="submit" value="Destroy by ID" id="destroyID" onclick="sendDeleteID()"></input>
                 <input type="submit" value="Destroy All" id="destroyAll" onclick="sendDeleteAll()"></input>
-                </div>
+            </div>
         </div>
-    </div>    
+    </div>
 
     <div class="tables" style="display: none">
         <table id="infoTable">
             <thead>
-                <th><h3>Current VMs</h3></th>
+                <th>
+                    <h3>Current VMs</h3>
+                </th>
             </thead>
             <tbody>
-                <tr><td>Loading...</td></tr>
+                <tr>
+                    <td>Loading...</td>
+                </tr>
             </tbody>
         </table>
     </div>
